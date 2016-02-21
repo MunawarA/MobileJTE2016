@@ -53,29 +53,17 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClickIndonesia(View view) {
         TextView txtTulisan = (TextView) findViewById(R.id.txtTulisan);
-        Button btnIndonesia = (Button) findViewById(R.id.btnIndonesia);
-
-        String indonesia = getString(R.string.TERJEMAHKAN_KE_INDONESIA);
         String apakabar = getString(R.string.TULISAN_APA_KABAR_DUNIA);
         txtTulisan.setText(apakabar);
-        btnIndonesia.setText(indonesia);
     }
     public void onClickEnglish(View view) {
         TextView txtTulisan = (TextView) findViewById(R.id.txtTulisan);
-        Button btnEnglish = (Button) findViewById(R.id.btnEnglish);
-
-        String english = getString(R.string.TERJEMAHKAN_KE_INGGRIS);
         String helloword = getString(R.string.TULISAN_HELLO_WORLD);
         txtTulisan.setText(helloword);
-        btnEnglish.setText(english);
     }
     public void onClickAceh(View view) {
         TextView txtTulisan = (TextView) findViewById(R.id.txtTulisan);
-        Button btnAceh = (Button) findViewById(R.id.btnAceh);
-
-        String aceh = getString(R.string.TERJEMAHKAN_KE_ACEH);
         String peuhaba = getString(R.string.TULISAN_PEU_HABA);
         txtTulisan.setText(peuhaba);
-        btnAceh.setText(aceh);
     }
 }
