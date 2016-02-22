@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClickAceh(View view) {
         TextView txtTulisan = (TextView) findViewById(R.id.txtTulisan);
-        String peuhaba = getString(R.string.TULISAN_PEU_HABA);
+        String peuhaba = getString(R.string.TULISAN_PEU_HABA_DONYA);
         txtTulisan.setText(peuhaba);
     }
 }
