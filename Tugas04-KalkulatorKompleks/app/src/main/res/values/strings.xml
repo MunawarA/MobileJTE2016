@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tugas04-KalkulatorKompleks</string>
+    <string name="action_settings">Settings</string>
+    <string name="bil_Real">Bilangan Real</string>
+    <string name="bil_Imajiner">Bilangan Imajiner</string>
+    <string name="Tambah">+</string>
+    <string name="Kurang">-</string>
+    <string name="Kali">*</string>
+</resources>
