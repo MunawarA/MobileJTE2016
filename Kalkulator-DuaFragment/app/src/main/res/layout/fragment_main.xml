@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.ac.unsyiah.elektro.mobile.kalkulator_duafragment.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/btnSatu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickBtnSatu" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/btnDua"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnSatu"
+        android:layout_toEndOf="@+id/btnSatu"
+        android:onClick="onClickBtnDua" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/btnTiga"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnDua"
+        android:layout_toEndOf="@+id/btnDua"
+        android:onClick="onClickBtnTiga" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:id="@+id/btnEmpat"
+        android:layout_alignBottom="@+id/btnTiga"
+        android:layout_toRightOf="@+id/btnTiga"
+        android:layout_toEndOf="@+id/btnTiga"
+        android:onClick="onClickBtnEmpat" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/btnLima"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickBtnLima" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:id="@+id/btnEnam"
+        android:layout_alignTop="@+id/btnLima"
+        android:layout_toRightOf="@+id/btnLima"
+        android:layout_toEndOf="@+id/btnLima"
+        android:onClick="onClickBtnEnam" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:id="@+id/btnTujuh"
+        android:layout_below="@+id/btnTiga"
+        android:layout_alignLeft="@+id/btnTiga"
+        android:layout_alignStart="@+id/btnTiga"
+        android:onClick="onClickBtnTujuh" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:id="@+id/btnDelapan"
+        android:layout_alignTop="@+id/btnTujuh"
+        android:layout_toRightOf="@+id/btnTujuh"
+        android:layout_toEndOf="@+id/btnTujuh"
+        android:onClick="onClickBtnDelapan" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:id="@+id/btnSembilan"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnLima"
+        android:layout_toEndOf="@+id/btnLima"
+        android:onClick="onClickBtnSembilan" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/btnKosong"
+        android:layout_alignTop="@+id/btnSembilan"
+        android:layout_alignLeft="@+id/btnTujuh"
+        android:layout_alignStart="@+id/btnTujuh"
+        android:onClick="onClickBtnKosong" />
+
+</RelativeLayout>

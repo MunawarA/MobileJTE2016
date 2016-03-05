@@ -1,0 +1,33 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragbawah"
+        android:name="id.ac.unsyiah.elektro.mobile.kalkulator_duafragment.FragAtas"
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout="@layout/fragment_fragatas" />
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:name="id.ac.unsyiah.elektro.mobile.kalkulator_duafragment.MainActivityFragment"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/fragment"
+        tools:layout="@layout/fragment_main"
+        android:layout_weight="0.33" />
+
+</LinearLayout>
