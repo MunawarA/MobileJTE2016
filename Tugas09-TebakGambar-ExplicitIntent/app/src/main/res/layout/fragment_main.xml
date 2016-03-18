@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.ac.unsyiah.elektro.mobile.tugas09_tebakgambar_explicitintent.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Activity Pertama"
+        android:id="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Klik Gambar Untuk Menebak"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMobil"
+        android:src="@drawable/mobil"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickTebakGambar"
+        android:layout_toLeftOf="@+id/imgSepedaMotor"
+        android:layout_toStartOf="@+id/imgSepedaMotor" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgSepedaMotor"
+        android:src="@drawable/sepedamotor"
+        android:layout_alignTop="@+id/imgMobil"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClickTebakGambar" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgBecakMotor"
+        android:src="@drawable/becakmotor"
+        android:layout_below="@+id/imgMobil"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/imgSepedaMotor"
+        android:layout_toStartOf="@+id/imgSepedaMotor"
+        android:onClick="onClickTebakGambar" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgBecakDayung"
+        android:src="@drawable/becakdayung"
+        android:layout_below="@+id/imgMobil"
+        android:layout_alignRight="@+id/imgSepedaMotor"
+        android:layout_alignEnd="@+id/imgSepedaMotor"
+        android:layout_toEndOf="@+id/imgBecakMotor"
+        android:layout_toRightOf="@+id/imgBecakMotor"
+        android:onClick="onClickTebakGambar" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgSepeda"
+        android:src="@drawable/sepeda"
+        android:layout_below="@+id/imgBecakMotor"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickTebakGambar" />
+
+</RelativeLayout>
