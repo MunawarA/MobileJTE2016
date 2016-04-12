@@ -1,0 +1,631 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentTop="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.ac.unsyiah.elektro.mobile.menuselforder.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMakanan1"
+        android:src="@drawable/sategurita"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMakanan2"
+        android:src="@drawable/burgertelur"
+        android:layout_below="@+id/imgMakanan1"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/txtDetailMakanan1"
+        android:layout_toStartOf="@+id/txtDetailMakanan1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMakanan3"
+        android:src="@drawable/nasigorengseafood"
+        android:layout_below="@+id/imgMakanan2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp"
+        android:layout_toStartOf="@+id/txtDetailMakanan2"
+        android:layout_toLeftOf="@+id/txtDetailMakanan2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMakanan4"
+        android:src="@drawable/baksobakar"
+        android:layout_below="@+id/imgMakanan3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp"
+        android:layout_toStartOf="@+id/btnSelesai"
+        android:layout_alignRight="@+id/imgMakanan3"
+        android:layout_alignEnd="@+id/imgMakanan3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMakanan5"
+        android:src="@drawable/nasisoto"
+        android:layout_below="@+id/imgMakanan4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp"
+        android:layout_toStartOf="@+id/txtMakanan7"
+        android:layout_alignRight="@+id/imgMakanan4"
+        android:layout_alignEnd="@+id/imgMakanan4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMakanan6"
+        android:src="@drawable/martabaktelur"
+        android:layout_below="@+id/imgMakanan5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp"
+        android:layout_alignRight="@+id/imgMakanan5"
+        android:layout_alignEnd="@+id/imgMakanan5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMakanan7"
+        android:src="@drawable/miekepiting"
+        android:layout_below="@+id/imgMakanan6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp"
+        android:layout_alignRight="@+id/imgMakanan4"
+        android:layout_alignEnd="@+id/imgMakanan4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMakanan8"
+        android:src="@drawable/karikambing"
+        android:layout_below="@+id/imgMakanan7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp"
+        android:layout_alignRight="@+id/imgMakanan7"
+        android:layout_alignEnd="@+id/imgMakanan7" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMakanan9"
+        android:src="@drawable/mierebus"
+        android:layout_below="@+id/imgMakanan8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp"
+        android:layout_toStartOf="@+id/txtMakanan10"
+        android:layout_toLeftOf="@+id/txtMakanan10" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMakanan10"
+        android:src="@drawable/tahuisi"
+        android:layout_below="@+id/imgMakanan9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp"
+        android:layout_alignRight="@+id/imgMakanan3"
+        android:layout_alignEnd="@+id/imgMakanan3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selesai"
+        android:id="@+id/btnSelesai"
+        android:layout_below="@+id/txtJumlahMakanan10"
+        android:layout_alignRight="@+id/txtMakanan10"
+        android:layout_alignEnd="@+id/txtMakanan10"
+        android:onClick="onClickButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sate Gurita"
+        android:id="@+id/txtMakanan1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgMakanan1"
+        android:layout_toEndOf="@+id/imgMakanan1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="pakai bumbu padang"
+        android:id="@+id/txtDetailMakanan1"
+        android:layout_below="@+id/txtMakanan1"
+        android:layout_toRightOf="@+id/imgMakanan1"
+        android:layout_toEndOf="@+id/imgMakanan1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Burger"
+        android:id="@+id/txtMakanan2"
+        android:layout_alignTop="@+id/imgMakanan2"
+        android:layout_toRightOf="@+id/imgMakanan2"
+        android:layout_toEndOf="@+id/imgMakanan2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="menggunakan telur"
+        android:id="@+id/txtDetailMakanan2"
+        android:layout_below="@+id/txtMakanan2"
+        android:layout_alignLeft="@+id/txtMakanan2"
+        android:layout_alignStart="@+id/txtMakanan2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nasi Seafood"
+        android:id="@+id/txtMakanan3"
+        android:layout_alignTop="@+id/imgMakanan3"
+        android:layout_toRightOf="@+id/imgMakanan3"
+        android:layout_toEndOf="@+id/imgMakanan3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="menggunakan udang"
+        android:id="@+id/txtDetailMakanan3"
+        android:layout_below="@+id/txtMakanan3"
+        android:layout_toRightOf="@+id/imgMakanan3"
+        android:layout_toEndOf="@+id/imgMakanan3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bakso Bakar"
+        android:id="@+id/txtMakanan4"
+        android:layout_alignTop="@+id/imgMakanan4"
+        android:layout_toRightOf="@+id/imgMakanan4"
+        android:layout_toEndOf="@+id/imgMakanan4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="dengan bumbu kacang"
+        android:id="@+id/txtDetailMakanan4"
+        android:layout_below="@+id/txtMakanan4"
+        android:layout_alignLeft="@+id/txtMakanan4"
+        android:layout_alignStart="@+id/txtMakanan4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nasi Soto"
+        android:id="@+id/txtDetailMakanan5"
+        android:layout_alignTop="@+id/imgMakanan5"
+        android:layout_toRightOf="@+id/imgMakanan5"
+        android:layout_toEndOf="@+id/imgMakanan5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="menggunakan ayam"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/txtDetailMakanan5"
+        android:layout_toRightOf="@+id/imgMakanan5"
+        android:layout_toEndOf="@+id/imgMakanan5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Martabak telur"
+        android:id="@+id/txtMakanan6"
+        android:layout_alignTop="@+id/imgMakanan6"
+        android:layout_toRightOf="@+id/imgMakanan6"
+        android:layout_toEndOf="@+id/imgMakanan6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="bumbu rempah"
+        android:id="@+id/txtDetailMakanan6"
+        android:layout_below="@+id/txtMakanan6"
+        android:layout_toRightOf="@+id/imgMakanan6"
+        android:layout_toEndOf="@+id/imgMakanan6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mie Kepiting"
+        android:id="@+id/txtMakanan7"
+        android:layout_alignTop="@+id/imgMakanan7"
+        android:layout_toRightOf="@+id/imgMakanan7"
+        android:layout_toEndOf="@+id/imgMakanan7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="dengan mie kuning"
+        android:id="@+id/txtDetailMakanan7"
+        android:layout_below="@+id/txtMakanan7"
+        android:layout_toRightOf="@+id/imgMakanan7"
+        android:layout_toEndOf="@+id/imgMakanan7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Kari Kambing"
+        android:id="@+id/txtMakanan8"
+        android:layout_alignTop="@+id/imgMakanan8"
+        android:layout_alignLeft="@+id/txtDetailMakanan7"
+        android:layout_alignStart="@+id/txtDetailMakanan7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="dengan kuah kari"
+        android:id="@+id/txtDetailMakanan8"
+        android:layout_below="@+id/txtMakanan8"
+        android:layout_toRightOf="@+id/imgMakanan8"
+        android:layout_toEndOf="@+id/imgMakanan8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mie Rebus"
+        android:id="@+id/txtMakanan9"
+        android:layout_alignTop="@+id/imgMakanan9"
+        android:layout_toRightOf="@+id/imgMakanan9"
+        android:layout_toEndOf="@+id/imgMakanan9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="dengan mie kuning"
+        android:id="@+id/txtDetailMakanan9"
+        android:layout_below="@+id/txtMakanan9"
+        android:layout_toRightOf="@+id/imgMakanan9"
+        android:layout_toEndOf="@+id/imgMakanan9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tahu Isi"
+        android:id="@+id/txtMakanan10"
+        android:layout_alignTop="@+id/imgMakanan10"
+        android:layout_toRightOf="@+id/imgMakanan10"
+        android:layout_toEndOf="@+id/imgMakanan10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="isi dalamnya"
+        android:id="@+id/txtDetailMakanan10"
+        android:layout_below="@+id/txtMakanan10"
+        android:layout_toRightOf="@+id/imgMakanan10"
+        android:layout_toEndOf="@+id/imgMakanan10" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:id="@+id/btnTambahMakanan1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClickButton" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:id="@+id/btnKurangMakanan1"
+        android:layout_below="@+id/txtDetailMakanan1"
+        android:layout_alignRight="@+id/btnTambahMakanan1"
+        android:layout_alignEnd="@+id/btnTambahMakanan1"
+        android:onClick="onClickButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtJumlahMakanan1"
+        android:layout_below="@+id/imgMakanan1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:id="@+id/btnTambahMakanan2"
+        android:layout_alignTop="@+id/txtMakanan2"
+        android:layout_alignRight="@+id/txtJumlahMakanan1"
+        android:layout_alignEnd="@+id/txtJumlahMakanan1" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:id="@+id/btnKurangMakanan2"
+        android:layout_below="@+id/txtDetailMakanan2"
+        android:layout_alignRight="@+id/btnTambahMakanan2"
+        android:layout_alignEnd="@+id/btnTambahMakanan2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtJumlahMakanan2"
+        android:layout_below="@+id/imgMakanan2"
+        android:layout_alignRight="@+id/btnKurangMakanan2"
+        android:layout_alignEnd="@+id/btnKurangMakanan2" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:id="@+id/btnTambahMakanan3"
+        android:layout_alignTop="@+id/txtMakanan3"
+        android:layout_alignRight="@+id/txtJumlahMakanan2"
+        android:layout_alignEnd="@+id/txtJumlahMakanan2" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:id="@+id/btnKurangMakanan3"
+        android:layout_above="@+id/imgMakanan4"
+        android:layout_alignRight="@+id/btnTambahMakanan3"
+        android:layout_alignEnd="@+id/btnTambahMakanan3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtJumlahMakanan3"
+        android:layout_below="@+id/btnKurangMakanan3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:id="@+id/btnTambahMakanan4"
+        android:layout_alignTop="@+id/txtMakanan4"
+        android:layout_alignRight="@+id/txtJumlahMakanan3"
+        android:layout_alignEnd="@+id/txtJumlahMakanan3" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:id="@+id/btnKurangMakanan4"
+        android:layout_below="@+id/txtDetailMakanan4"
+        android:layout_alignRight="@+id/btnTambahMakanan4"
+        android:layout_alignEnd="@+id/btnTambahMakanan4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtJumlahMakanan4"
+        android:layout_below="@+id/btnKurangMakanan4"
+        android:layout_alignRight="@+id/btnKurangMakanan4"
+        android:layout_alignEnd="@+id/btnKurangMakanan4" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:id="@+id/btnTambahMakanan5"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:id="@+id/btnKurangMakanan5"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtJumlahMakanan5"
+        android:layout_below="@+id/btnKurangMakanan5"
+        android:layout_alignRight="@+id/btnKurangMakanan5"
+        android:layout_alignEnd="@+id/btnKurangMakanan5" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:id="@+id/btnTambahMakanan6"
+        android:layout_alignTop="@+id/txtMakanan6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:id="@+id/btnKurangMakanan6"
+        android:layout_alignBottom="@+id/imgMakanan6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtJumlahMakanan6"
+        android:layout_below="@+id/btnKurangMakanan6"
+        android:layout_alignRight="@+id/btnKurangMakanan6"
+        android:layout_alignEnd="@+id/btnKurangMakanan6" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:id="@+id/btnTambahMakanan7"
+        android:layout_alignTop="@+id/txtMakanan7"
+        android:layout_alignRight="@+id/txtJumlahMakanan6"
+        android:layout_alignEnd="@+id/txtJumlahMakanan6" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:id="@+id/btnKurangMakanan7"
+        android:layout_below="@+id/btnTambahMakanan7"
+        android:layout_alignRight="@+id/btnTambahMakanan7"
+        android:layout_alignEnd="@+id/btnTambahMakanan7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtJumlahMakanan7"
+        android:layout_below="@+id/btnKurangMakanan7"
+        android:layout_alignRight="@+id/btnKurangMakanan7"
+        android:layout_alignEnd="@+id/btnKurangMakanan7" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:id="@+id/btnTambahMakanan8"
+        android:layout_alignTop="@+id/txtMakanan8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:id="@+id/btnKurangMakanan8"
+        android:layout_above="@+id/imgMakanan9"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtJumlahMakanan8"
+        android:layout_below="@+id/btnKurangMakanan8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:id="@+id/btnTambahMakanan9"
+        android:layout_alignTop="@+id/txtMakanan9"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:id="@+id/btnKurangMakanan9"
+        android:layout_below="@+id/txtDetailMakanan9"
+        android:layout_alignRight="@+id/btnTambahMakanan9"
+        android:layout_alignEnd="@+id/btnTambahMakanan9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtJumlahMakanan9"
+        android:layout_below="@+id/btnKurangMakanan9"
+        android:layout_alignRight="@+id/btnKurangMakanan9"
+        android:layout_alignEnd="@+id/btnKurangMakanan9" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:id="@+id/btnTambahMakanan10"
+        android:layout_alignTop="@+id/txtMakanan10"
+        android:layout_alignRight="@+id/txtJumlahMakanan9"
+        android:layout_alignEnd="@+id/txtJumlahMakanan9" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:id="@+id/btnKurangMakanan10"
+        android:layout_below="@+id/txtDetailMakanan10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtJumlahMakanan10"
+        android:layout_below="@+id/btnKurangMakanan10"
+        android:layout_alignRight="@+id/btnKurangMakanan10"
+        android:layout_alignEnd="@+id/btnKurangMakanan10" />
+
+</RelativeLayout>
+</ScrollView>
