@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#0aeb3f"
+    android:id="@+id/scrollView"
+    android:fillViewport="false">
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#240df5" />
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnK1Doa1"
+        android:text="Doa Berserah Diri"
+        android:onClick="onClickBtnK1Doa1"
+        android:textAlignment="textStart" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnK1Doa2"
+            android:text="Doa Anugerah Keamanan Negeri"
+            android:textAlignment="textStart" />
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnK1Doa3"
+        android:text="Doa Kekuatan Iman"
+        android:textAlignment="textStart" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnK1Doa4"
+            android:text="Doa Perlindungan dari Kesesatan"
+            android:textAlignment="textStart" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnK1Doa5"
+            android:text="Doa Melihat Keajaiban Alam"
+            android:textAlignment="textStart" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnK1Doa6"
+            android:text="Doa Diterima Amalan"
+            android:textAlignment="textStart" />
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnK1Doa7"
+        android:text="Doa Diringankan Beban"
+        android:textAlignment="textStart" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnK1Doa8"
+            android:text="Doa Berserah Diri"
+            android:textAlignment="textStart" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnK1Doa9"
+            android:text="Doa Sapu Jagad"
+            android:textAlignment="textStart" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnK1Doa10"
+            android:text="Doa Diberi Pemimpin Agama"
+            android:textAlignment="textStart" />
+
+
+
+    </LinearLayout>
+</ScrollView>
